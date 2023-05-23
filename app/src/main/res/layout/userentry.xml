@@ -29,7 +29,6 @@
                 android:textColor="@color/black"
                 style="bold"
                 />
-
             <TextView
                 android:id="@+id/textname"
                 android:layout_width="wrap_content"
@@ -47,7 +46,6 @@
                 android:textColor="@color/black"
                 style="bold"
                 />
-
             <TextView
                 android:id="@+id/textemail"
                 android:layout_width="wrap_content"
@@ -65,7 +63,6 @@
                 android:textColor="@color/black"
                 style="bold"
                 />
-
             <TextView
                 android:id="@+id/textage"
                 android:layout_width="wrap_content"
@@ -74,10 +71,7 @@
                 android:textColor="@color/black"
                 style="bold"
                 />
-
         </LinearLayout>
-
     </LinearLayout>
-
 
 </androidx.cardview.widget.CardView>

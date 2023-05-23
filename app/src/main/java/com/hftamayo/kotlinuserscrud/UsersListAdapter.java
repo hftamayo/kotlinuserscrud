@@ -31,18 +31,23 @@ public class UsersListAdapter extends RecyclerView.Adapter<UsersListAdapter.User
 
     @Override
     public void onBindViewHolder(@NonNull UsersViewHolder holder, int position) {
-
+        holder.name_id.setText(String.valueOf(name_id.get(position)));
+        holder.email_id.setText(String.valueOf(email_id.get(position)));
+        holder.age_id.setText(String.valueOf(age_id.get(position)));
     }
 
     @Override
     public int getItemCount() {
-        return 0;
+        return name_id.size();
     }
 
     public class UsersViewHolder extends RecyclerView.ViewHolder {
         TextView name_id, email_id, age_id;
         public UsersViewHolder(@NonNull View itemView) {
             super(itemView);
+            name_id = itemView.findViewById(R.id.textname);
+            email_id = itemView.findViewById(R.id.textemail);
+            age_id = itemView.findViewById(R.id.textage);
         }
     };
 
